@@ -64,7 +64,7 @@ function DropDown() {
     <div className="coin-div">
       <FormControl onSubmit={handleSubmit} className={classes.formControl}>
         <InputLabel className={classes.label} id="demo-simple-select-label">
-          Coin
+          Coin Select
         </InputLabel>
         <Select
           className={classes.inputSelect}

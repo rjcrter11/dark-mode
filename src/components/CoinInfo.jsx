@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const CoinInfo = ({ coinType }) => {
-  const [collapse, setCollapse] = useState(false);
+  const [collapse, setCollapse] = useState(true);
 
   const handleCollapse = () => {
     setCollapse(!collapse);
@@ -10,16 +10,16 @@ const CoinInfo = ({ coinType }) => {
 
   return (
     <div className="coin-select">
-      <h2>Coin Info</h2>
+      {/* <h2 className="coin-info">Coin Info</h2> */}
       <div className="coin-container">
-        <h4> {coinType.id} </h4>
+        <h4 className="coin-type"> {coinType.id} </h4>
         <img
           className="coin-img"
           src={coinType.image && coinType.image.small}
           alt="coin"
         />
-        <h5> {coinType.name} </h5>
-        <h6> {coinType.symbol} </h6>
+        <h5 className="coin-name"> {coinType.name} </h5>
+        <h6 className="coin-symbol"> {coinType.symbol} </h6>
         <p className="category"> {coinType.categories} </p>
         <div className="collapse-desc">
           <p className={collapse ? "desctoggle" : "desc"}>

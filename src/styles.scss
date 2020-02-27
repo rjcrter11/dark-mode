@@ -296,33 +296,41 @@ img {
 .coin-select {
   width: 100%;
   margin: 0 auto;
-  margin-top: 5%;
-}
+  margin-top: 12%;
 
+  .coin-info {
+    margin-bottom: 1%;
+    font-size: 2rem;
+  }
+}
 .coin-container {
   margin: 5% auto;
-  width: 60%;
+  width: 75%;
   padding: 1%;
 
   h4 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 2%;
   }
   h5 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    margin-top: 5%;
   }
 
   h6 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    margin-top: 2%;
   }
   .category {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    margin-top: 0.5%;
   }
   .desc {
     font-size: 1.25rem;
     line-height: 3rem;
     width: 100%;
-    height: 400px;
+    height: 300px;
     overflow: scroll;
   }
   .collapse-desc {
@@ -334,6 +342,17 @@ img {
 .coin-img {
   max-width: 100px;
   max-height: auto;
+}
+
+.coin-info-button {
+  padding: 1.5% 3%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 50%;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  border: none;
 }
 
 .desctoggle {
