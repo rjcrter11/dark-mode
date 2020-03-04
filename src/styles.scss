@@ -120,7 +120,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -136,12 +136,13 @@ table {
 
 html {
   font-size: 62.5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
 
 h1 {
   font-size: 2.4rem;
+  font-weight: bold;
 }
 
 h2 {
@@ -178,6 +179,33 @@ img {
   -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
   box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+
+  .links {
+    width: 20%;
+    padding: 0.75% 0;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 4%;
+
+    a {
+      font-size: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: rgb(231, 154, 12);
+
+      &:active {
+        .dark-toggle {
+          color: white;
+        }
+      }
+
+      &:active,
+      &:hover {
+        color: rgb(81, 184, 253);
+        border-bottom: 1px solid gray;
+      }
+    }
+  }
 }
 
 .dark-mode__toggle {
@@ -229,8 +257,8 @@ img {
 .coin__title {
   display: block;
   margin-left: 8px;
-    min-width: 160px;
-text-align: left;
+  min-width: 160px;
+  text-align: center;
 }
 
 .coin__symbol {
@@ -247,7 +275,91 @@ text-align: left;
   background-color: #313843;
 
   .navbar {
-    background-color: #1F2022;
+    background-color: #1f2022;
     border: none;
+    // color: #8884d8;
+    // color: rgb(255, 182, 47);
   }
+}
+
+.home-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  .home-img {
+    width: 100%;
+    min-width: 1032px;
+    max-height: 600px;
+  }
+}
+.coin-select {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 12%;
+
+  .coin-info {
+    margin-bottom: 1%;
+    font-size: 2rem;
+  }
+}
+.coin-container {
+  margin: 5% auto;
+  width: 75%;
+  padding: 1%;
+
+  h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+  h5 {
+    font-size: 1.75rem;
+    margin-top: 5%;
+  }
+
+  h6 {
+    font-size: 1.5rem;
+    margin-top: 2%;
+  }
+  .category {
+    font-size: 1.5rem;
+    margin-top: 0.5%;
+  }
+  .desc {
+    font-size: 1.25rem;
+    line-height: 3rem;
+    width: 100%;
+    height: 300px;
+    overflow: scroll;
+  }
+  .collapse-desc {
+    margin-top: 2%;
+    padding: 3%;
+  }
+}
+
+.coin-img {
+  max-width: 100px;
+  max-height: auto;
+}
+
+.coin-info-button {
+  padding: 1.5% 3%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 50%;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+.desctoggle {
+  display: none;
+}
+
+.coin-div {
+  width: 60%;
+  margin-top: 5%;
 }
